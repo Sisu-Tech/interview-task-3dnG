@@ -69,5 +69,5 @@ export default defineConfig([
     { files: ['**/*.json'], plugins: { json }, language: 'json/json', extends: ['json/recommended'] },
     { files: ['**/*.md'], plugins: { markdown }, language: 'markdown/gfm', extends: ['markdown/recommended'] },
     eslintPluginPrettierRecommended,
-    { ignores: ['**/dist/**', '**/node_modules/**', '**/pnpm-lock.yaml'] },
+    { ignores: ['**/dist/**', '**/node_modules/**', '**/-lock.{json,yaml}'] },
 ]);
