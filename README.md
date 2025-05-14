@@ -1,7 +1,11 @@
 # interview-task-3dnG
 
-## After cloning the repository:
-
+## After cloning the repository
+### If you don't have NodeJS installed
+- Install nvm (Node Version Manager) https://github.com/nvm-sh/nvm
+- Install NodeJS using nvm:
+  - `nvm install 22.15.0`
+  - `nvm use 22.15.0`
 -   Install packages by running `npm install` or `pnpm install`.
 
 ## Task Description
