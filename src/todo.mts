@@ -20,6 +20,7 @@ export function task(store: Awaited<ReturnType<typeof getStore>>) {
 }
 
 export async function getStore() {
+    // Use data from the following variables to implement the methods below
     const users: Readonly<User[]> = await getAllUsers();
     const userProfiles: Readonly<UserProfile[]> = await new Promise<UserProfile[]>((resolve) =>
         getAllUserProfiles(resolve),
@@ -27,6 +28,8 @@ export async function getStore() {
     const userTransactions: Readonly<UserTransaction[]> = await new Promise<UserTransaction[]>((resolve) =>
         getAllUserTransactions(resolve),
     );
+
+    // You can create additional variables to transform the data into different structures or formats if needed.
 
     // Task 1
     const getUserProfile = (userId: string): Omit<UserProfile, 'userId'> | null => {
