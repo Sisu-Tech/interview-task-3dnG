@@ -21,5 +21,5 @@ task(store);
 
 console.log();
 console.log(
-    wrapTextInBox(`✅  Task completed in average in ${analytics.getAverageExecutionTimeInMs(executionTimes)}ms`),
+    wrapTextInBox(`✅  Task completed on average in ${analytics.getAverageExecutionTimeInMs(executionTimes)}ms`),
 );
